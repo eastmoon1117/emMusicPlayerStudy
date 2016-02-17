@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0"
+    tools:context="com.example.jared.mediaplayerstudy.MainActivity">
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/musicName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:text="Music Player"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/playingTime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="00:00"/>
+            <SeekBar
+                android:id="@+id/seek"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:max="100"/>
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="00:00"/>
+        </LinearLayout>
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="播放"/>
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="暂停"/>
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="停止"/>
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
